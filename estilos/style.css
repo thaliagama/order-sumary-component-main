@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap');
+
+:root{
+    --bgcolorBody: hsl(225, 100%, 94%);
+    --bgcolorDiv: hsla(240, 2%, 88%, 0.377);
+    --btncolor: hsl(245, 75%, 52%);
+    --bgcolor: hsl(225, 100%, 98%);
+    --btnhover: hsl(223, 47%, 23%);
+    --textcolorbtn:#646262;
+    
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:var(--bgcolorBody);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+main{
+    width: 350px;
+    border-radius: 7px;
+    background-color: var(--bgcolor);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-illustration-hero{
+    margin-bottom: 30px;
+    width: 350px;
+    border-radius: 7px 7px 0 0;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.annual-plan{
+    display: flex;
+    align-items: center;
+    width: 275px;
+    background-color: var(--bgcolorDiv);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 0.9em;
+    margin: 20px 0 20px 0;
+}
+
+#change{
+    color: var(--btncolor);
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+#change:hover{
+    color: var(--btnhover);
+}
+
+#price{
+    display: block;
+    margin-left: 5px;
+}
+
+h2{
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+#btn-proceed{
+    width: 300px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--btncolor);
+    color: var(--bgcolor);
+    padding: 7px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+#btn-proceed:hover{
+    background-color: var(--btnhover);
+}
+
+#btn-cancel{
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bgcolor);
+    padding: 7px;
+    color: var(--textcolorbtn);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#btn-cancel:hover{
+    color: var(--btnhover);
+}
+
+.attribution { 
+    bottom: 0;
+    position: fixed;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

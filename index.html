@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilos/style.css">
   
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main>
+    <img src="./images/illustration-hero.svg" id="img-illustration-hero" alt="woman listening music">
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, <br>
+        audiobooks, and podcasts on any device <br>
+        anywhere you like!
+      </p>
+      <div class="annual-plan">
+        <img src="./images/icon-music.svg" alt="icon music">
+          <div id="price">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+        <a href="#" id="change">Change</a>
+      </div>
+      <button id="btn-proceed">Proceed to Payment</button>
+      <button id="btn-cancel">Cancel Order</button>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/thaliagama" target="_blank">Thalia Gama</a>.
   </div>
 </body>
 </html>
